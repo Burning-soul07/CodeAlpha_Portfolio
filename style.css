@@ -17,7 +17,6 @@ body {
 }
 
 .container {
-    /* REMOVED flexbox here so the child sections can properly fill the screen height */
     display: block; 
     background-color: black;
     height: 100dvh;
@@ -36,11 +35,11 @@ body {
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* This forces vertical centering */
+    justify-content: center; 
 }
 
 .side {
-    align-items: center; /* This forces horizontal centering */
+    align-items: center; 
     text-align: center;
 }
 
@@ -126,7 +125,6 @@ body {
     font-size: 16px;
 }
 
-/* --- NAVIGATION BAR --- */
 .item {
     position: fixed;
     top: 50%;
@@ -191,20 +189,19 @@ body {
     text-decoration: underline;
 }
 
-/* --- MOBILE STYLES --- */
 @media (max-width: 768px) {
     .item {
         top: auto;
         bottom: 0;
         right: 0;
         left: 0;
-        width: 100vw; /* Forces it to exactly match screen width */
+        width: 100vw; 
         transform: none;
         border-radius: 0;
         border: none;
         border-top: 1px solid gray;
         background-color: rgba(10, 10, 10, 0.95);
-        padding: 0; /* Removed padding so content can fill perfectly */
+        padding: 0; 
     }
     
     .content {
@@ -213,7 +210,7 @@ body {
         align-items: center;
         gap: 0;
         width: 100%;
-        height: 60px; /* Fixed height for the bar */
+        height: 60px; 
     }
 
     .content li {
@@ -224,12 +221,12 @@ body {
     .content a {
         padding: 0;
         width: 100%;
-        height: 100%; /* Makes the entire block tappable */
+        height: 100%; 
         border-radius: 0;
     }
     
     .container {
-        padding-bottom: 60px; /* Exactly matches nav bar height */
+        padding-bottom: 60px; 
     }
     
     .side, .about, .skills, .footer {
@@ -247,4 +244,5 @@ body {
     .pc {
         flex-direction: column; 
     }
-}
+    }
+    
