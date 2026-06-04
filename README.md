@@ -1,2 +1,2 @@
-# CodeAlpha_portfolio
+# Basic_portfolio
 It is my portfolio
